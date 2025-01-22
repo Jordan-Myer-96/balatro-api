@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "buildCommand": "next build",
+  "devCommand": "next dev",
+  "outputDirectory": ".next",
+  "regions": ["all"],
+  "env": {
+    "MONGODB_URI": "@mongodb_uri"
+  }
+}

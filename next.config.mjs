@@ -1,15 +1,11 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    // Enable Edge Runtime for API routes
-    experimental: {
-      runtime: 'edge',
-    },
-    // Increase body size limit for API requests if needed
-    api: {
-      bodyParser: {
-        sizeLimit: '1mb'
-      }
-    }
+  experimental: {
+    serverActions: true,
+  },
+  env: {
+    MONGODB_URI: process.env.MONGODB_URI,
   }
-  
-  export default nextConfig;
+}
+
+export default nextConfig;
